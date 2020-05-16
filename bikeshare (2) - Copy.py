@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
+
 CITY_DATA = { 'chicago': '.\data\chicago.csv',
               'new york city': '.\data\\new_york_city.csv',
               'washington': '.\data\washington.csv' }
@@ -18,6 +19,7 @@ print_line = lambda char: print(char[0] * LINE_LEN)
 def print_processing_time(start_time):
     time_str = "[... %s seconds]" % round((time.time() - start_time), 3)
     print(time_str.rjust(LINE_LEN))
+    
     print_line('-')
 
 
@@ -73,6 +75,7 @@ def get_filter_month():
             break
         else:
             continue
+    
     
     return month
 
